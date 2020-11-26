@@ -2,11 +2,23 @@
 
 基于Swoole开发的协程HTTP分发中控。
 
-### 流程图
+### 准备
+
+- swoole4.3扩展
+- redis 扩展
+- PHP7.4^
+
+### 快速开始
+
+````
+php main.php --start
+````
+
+### 架构图
 
 ![avatar](markdown/架构图.png)
 
-***数据协议***
+### 数据协议
   - Request (请求包)
   - route (路由地址)
   - method (请求类型)
@@ -14,7 +26,7 @@
   - uuid(唯一ID)
   - extra (额外参数)
 
-- 参考
+***参考***
 ```
 {
     "request":"{STRING}",
